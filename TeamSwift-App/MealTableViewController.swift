@@ -15,7 +15,7 @@ class MealTableViewController: UITableViewController {
         super.init(coder: aDecoder)
         
         // Initialize Tab Bar Item
-        tabBarItem = UITabBarItem(title: "Feed", image: UIImage(named: "FoodFeed"), tag: 0)
+        //tabBarItem = UITabBarItem(title: "Feed", image: UIImage(named: "FoodFeed"), tag: 0)
     }
     
     // Mark: Properties
