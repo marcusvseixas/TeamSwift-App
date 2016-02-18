@@ -1,9 +1,10 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++6973626",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++9A4E3A6",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++9A4E3A6" : 0,
     "86937C9DD94460C97C6E77257F65BB661DFB4310+++B00F329" : 0,
     "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++C37D2A1" : 0,
     "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++2887567" : 0,
@@ -11,6 +12,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E32D96AB-ADBB-4ADB-BE87-612B795FD834",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++9A4E3A6" : "TeamSwift-App\/",
     "86937C9DD94460C97C6E77257F65BB661DFB4310+++B00F329" : "",
     "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++C37D2A1" : "SW-TeamSwift-App\/TeamSwift-App\/",
     "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++2887567" : "SW-TeamSwift-App\/TeamSwift-App\/",
@@ -29,6 +31,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/marcusvseixas\/TeamSwift-App.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++6973626"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/marcusvseixas\/TeamSwift-App.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++9A4E3A6"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/marcusvseixas\/TeamSwift-App.git",

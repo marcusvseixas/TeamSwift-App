@@ -51,7 +51,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="EE836D27-410C-4B50-94CA-5665BB4F5C42" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ED241324-18BB-47D9-8C3A-004EBD885EAC" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
                                             <rect key="frame" x="33" y="38" width="100" height="100"/>
                                             <accessibility key="accessibilityConfiguration" identifier="photo"/>
                                         </imageView>
@@ -145,7 +145,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="EE836D27-410C-4B50-94CA-5665BB4F5C42" width="300" height="260">
+        <image name="ED241324-18BB-47D9-8C3A-004EBD885EAC" width="300" height="260">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
