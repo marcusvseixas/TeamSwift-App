@@ -23,7 +23,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6" y="0.0"/>
+            <point key="canvasLocation" x="-4" y="2"/>
         </scene>
         <!--Feed-->
         <scene sceneID="kwu-uz-5Cs">
@@ -41,28 +41,58 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="174.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d5q-Kl-LQi">
-                                            <rect key="frame" x="202" y="38" width="390" height="128"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seP-fg-KQ4">
-                                            <rect key="frame" x="190" y="8" width="390" height="33"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ED241324-18BB-47D9-8C3A-004EBD885EAC" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
-                                            <rect key="frame" x="33" y="38" width="100" height="100"/>
-                                            <accessibility key="accessibilityConfiguration" identifier="photo"/>
-                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="15c-bC-QPC">
+                                            <rect key="frame" x="8" y="8" width="584" height="159"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seP-fg-KQ4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yrb-Uh-FG7">
+                                                    <rect key="frame" x="0.0" y="33" width="584" height="127"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="9CEF4288-A569-43BC-A471-640932B48A64" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
+                                                            <rect key="frame" x="0.0" y="0.0" width="194" height="127"/>
+                                                            <accessibility key="accessibilityConfiguration" identifier="photo"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="150" id="1JS-Z7-LSd"/>
+                                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="EIj-5Q-LIG"/>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="bQt-Oq-tfD"/>
+                                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="pUC-BU-4x0"/>
+                                                                <constraint firstAttribute="width" constant="150" id="un8-E2-tUc"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="x8j-0Z-o9N"/>
+                                                            </constraints>
+                                                            <variation key="default">
+                                                                <mask key="constraints">
+                                                                    <exclude reference="1JS-Z7-LSd"/>
+                                                                    <exclude reference="EIj-5Q-LIG"/>
+                                                                    <exclude reference="pUC-BU-4x0"/>
+                                                                    <exclude reference="un8-E2-tUc"/>
+                                                                </mask>
+                                                            </variation>
+                                                        </imageView>
+                                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d5q-Kl-LQi">
+                                                            <rect key="frame" x="194" y="0.0" width="390" height="100"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="d5q-Kl-LQi" secondAttribute="trailing" id="2r5-pt-ScY"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Xcr-ob-PFH" secondAttribute="bottom" id="SBI-7c-4UA"/>
+                                                        <constraint firstItem="Xcr-ob-PFH" firstAttribute="top" secondItem="yrb-Uh-FG7" secondAttribute="top" id="SZ0-IX-YEW"/>
+                                                        <constraint firstItem="Xcr-ob-PFH" firstAttribute="leading" secondItem="yrb-Uh-FG7" secondAttribute="leading" id="azS-Xs-cfm"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="d5q-Kl-LQi" firstAttribute="leading" secondItem="Xcr-ob-PFH" secondAttribute="trailing" constant="39" id="EVc-d1-a0U"/>
-                                        <constraint firstItem="d5q-Kl-LQi" firstAttribute="trailing" secondItem="Jo4-pV-8fq" secondAttribute="trailingMargin" id="Ev1-g9-LQq"/>
-                                        <constraint firstItem="Xcr-ob-PFH" firstAttribute="leading" secondItem="Jo4-pV-8fq" secondAttribute="leadingMargin" constant="25" id="JEr-rU-4pk"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Xcr-ob-PFH" secondAttribute="bottom" constant="28.5" id="RTc-7H-PWF"/>
-                                        <constraint firstItem="Xcr-ob-PFH" firstAttribute="top" secondItem="Jo4-pV-8fq" secondAttribute="topMargin" constant="30" id="fRe-Po-s4f"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="seP-fg-KQ4" secondAttribute="trailing" constant="12" id="vAv-lH-Sql"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="15c-bC-QPC" secondAttribute="bottom" id="S5Q-F6-n87"/>
+                                        <constraint firstItem="15c-bC-QPC" firstAttribute="top" secondItem="Jo4-pV-8fq" secondAttribute="topMargin" id="byz-dR-kHm"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="15c-bC-QPC" secondAttribute="trailing" id="jtx-jS-kfg"/>
+                                        <constraint firstItem="15c-bC-QPC" firstAttribute="leading" secondItem="Jo4-pV-8fq" secondAttribute="leadingMargin" id="m7D-Kj-Mn6"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -145,7 +175,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ED241324-18BB-47D9-8C3A-004EBD885EAC" width="300" height="260">
+        <image name="9CEF4288-A569-43BC-A471-640932B48A64" width="300" height="260">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

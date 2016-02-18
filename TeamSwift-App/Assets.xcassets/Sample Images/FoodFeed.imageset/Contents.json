@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "iphone",
-      "filename" : "29-1.png",
+      "filename" : "50.png",
       "scale" : "1x"
     },
     {
       "idiom" : "iphone",
-      "filename" : "50.png",
+      "filename" : "58.png",
       "scale" : "2x"
     },
     {
@@ -27,9 +27,9 @@
     },
     {
       "idiom" : "iphone",
-      "filename" : "58.png",
+      "filename" : "29-1.png",
       "unassigned" : true,
-      "scale" : "2x"
+      "scale" : "3x"
     },
     {
       "idiom" : "iphone",
