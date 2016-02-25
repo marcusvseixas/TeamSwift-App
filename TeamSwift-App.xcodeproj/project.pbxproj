@@ -87,6 +87,7 @@
 		7591D4C21C6D4ADC0052658E = {
 			isa = PBXGroup;
 			children = (
+				754CDCAF1C7FBB09002370D0 /* .gitignore */,
 				7591D4CD1C6D4ADC0052658E /* TeamSwift-App */,
 				7591D4E41C6D4ADC0052658E /* TeamSwift-AppTests */,
 				7591D4EF1C6D4ADC0052658E /* TeamSwift-AppUITests */,
@@ -245,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7591D4DB1C6D4ADC0052658E /* LaunchScreen.storyboard in Resources */,
+				754CDCB01C7FBB09002370D0 /* .gitignore in Resources */,
 				7591D4D81C6D4ADC0052658E /* Assets.xcassets in Resources */,
 				7591D4D61C6D4ADC0052658E /* Main.storyboard in Resources */,
 			);
