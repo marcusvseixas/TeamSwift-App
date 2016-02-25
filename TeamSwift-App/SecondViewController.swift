@@ -67,6 +67,7 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!) {
         // Check if the metadataObjects array is not nil and it contains at least one object.
         if metadataObjects == nil || metadataObjects.count  == 0{
+            
             qrCodeFrameView?.frame = CGRectZero
             messageLabel.text = "No QR Code Detected"
             return
@@ -77,7 +78,9 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         
         if metadataObj.type == AVMetadataObjectTypeQRCode{
             // If the found metadata is equal to the QR code metadata then update the status label's text and set the bounds
+            
             let barCodeObject = videoPreviewLayer?.transformedMetadataObjectForMetadataObject(metadataObj as AVMetadataMachineReadableCodeObject) as! AVMetadataMachineReadableCodeObject
+            
             qrCodeFrameView?.frame = barCodeObject.bounds;
             
             
