@@ -54,7 +54,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DCB21E5C-3A8C-479B-BD6F-AB488B26A0EF" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6F2A3645-53C6-4D62-8B3D-E5A27BC3A652" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
                                             <rect key="frame" x="33" y="38" width="100" height="100"/>
                                             <accessibility key="accessibilityConfiguration" identifier="photo"/>
                                         </imageView>
@@ -147,10 +147,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yBn-p0-s9n">
                                 <rect key="frame" x="96" y="92" width="408" height="338"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home food 128 128" translatesAutoresizingMaskIntoConstraints="NO" id="ffX-Iq-nKY">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="home food 128 128" translatesAutoresizingMaskIntoConstraints="NO" id="ffX-Iq-nKY">
                                         <rect key="frame" x="140" y="0.0" width="128" height="128"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yK-FS-rCu">
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yK-FS-rCu">
                                         <rect key="frame" x="158" y="128" width="93" height="165"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <state key="normal" title="Sign Up">
@@ -277,8 +277,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Camera.png" width="32" height="32"/>
-        <image name="DCB21E5C-3A8C-479B-BD6F-AB488B26A0EF" width="300" height="260">
+        <image name="6F2A3645-53C6-4D62-8B3D-E5A27BC3A652" width="300" height="260">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -5532,6 +5531,7 @@ AATM6gAEzOwABMzxAATM+QAEzPwABM0BAATNCQAEzQwABM0eAATNIQAEzSYAAAAAAAAEAQAAAAAAAABB
 AAAAAAAAAAAAAAAAAATNKA
 </mutableData>
         </image>
+        <image name="Camera.png" width="32" height="32"/>
         <image name="FoodFeed" width="50" height="50"/>
         <image name="home 32 by 32" width="32" height="32"/>
         <image name="home food 128 128" width="128" height="128"/>
