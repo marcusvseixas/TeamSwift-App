@@ -19,11 +19,31 @@
                     <connections>
                         <segue destination="A6x-sH-ES6" kind="relationship" relationship="viewControllers" id="9Ch-6d-Wpv"/>
                         <segue destination="GZG-qe-PhC" kind="relationship" relationship="viewControllers" id="OxB-1Y-oal"/>
+                        <segue destination="ben-a8-Vtu" kind="relationship" relationship="viewControllers" id="ruk-lO-s3h"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6" y="0.0"/>
+            <point key="canvasLocation" x="-6" y="-30"/>
+        </scene>
+        <!--add Food 2-->
+        <scene sceneID="wVx-6c-Aqe">
+            <objects>
+                <viewController id="ben-a8-Vtu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dot-B2-BLi"/>
+                        <viewControllerLayoutGuide type="bottom" id="6k1-Q0-9GQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GZ8-dj-rIS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="add Food 2" selectedImage="pizza bar icon" id="c8b-v1-w1b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tfg-DC-j4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6" y="770"/>
         </scene>
         <!--food feed-->
         <scene sceneID="kwu-uz-5Cs">
@@ -51,7 +71,7 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="C176C03B-5594-4ACF-B95C-37D0055F1FE1" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="DF6687EA-1062-4A24-A026-B893A6CF1864" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
                                             <rect key="frame" x="33" y="38" width="100" height="100"/>
                                             <accessibility key="accessibilityConfiguration" identifier="photo"/>
                                         </imageView>
@@ -145,7 +165,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="C176C03B-5594-4ACF-B95C-37D0055F1FE1" width="300" height="260">
+        <image name="DF6687EA-1062-4A24-A026-B893A6CF1864" width="300" height="260">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

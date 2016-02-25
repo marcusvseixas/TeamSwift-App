@@ -15,9 +15,9 @@ class TabBarViewController: UITabBarController {
         super.init(coder: aDecoder)
         
         // Initialize Tab Bar Item
-        tabBarItem = UITabBarItem(title: "Feed", image: UIImage(named: "FoodFeed"), tag: 0)
+        //tabBarItem = UITabBarItem(title: "Feed", image: UIImage(named: "FoodFeed"), tag: 0)
         
-        tabBarItem.badgeValue = "8"
+        //tabBarItem.badgeValue = "8"
     }
     
 }
