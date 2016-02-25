@@ -17,6 +17,38 @@
             endingLineNumber = "10"
             landmarkName = "Meal"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TeamSwift_App.Meal.__deallocating_deinit"
+                  moduleName = "TeamSwift-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samster845/Desktop/INF496/TeamSwift-App/TeamSwift-App/Meal.swift"
+                  timestampString = "478114309.369744"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TeamSwift_App.Meal.deinit"
+                  moduleName = "TeamSwift-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samster845/Desktop/INF496/TeamSwift-App/TeamSwift-App/Meal.swift"
+                  timestampString = "478114309.370007"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -33,6 +65,54 @@
             endingLineNumber = "11"
             landmarkName = "TabBarViewController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TeamSwift_App.TabBarViewController.__deallocating_deinit"
+                  moduleName = "TeamSwift-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samster845/Desktop/INF496/TeamSwift-App/TeamSwift-App/TabBarViewController.swift"
+                  timestampString = "478114309.371235"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TeamSwift_App.TabBarViewController.init (TeamSwift_App.TabBarViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; TeamSwift_App.TabBarViewController"
+                  moduleName = "TeamSwift-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samster845/Desktop/INF496/TeamSwift-App/TeamSwift-App/TabBarViewController.swift"
+                  timestampString = "478114309.371457"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TeamSwift-App/SecondViewController.swift"
+            timestampString = "478114308.356723"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

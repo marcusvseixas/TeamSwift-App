@@ -53,8 +53,8 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yrb-Uh-FG7">
                                                     <rect key="frame" x="0.0" y="33" width="584" height="127"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="F1633622-D767-41E5-8651-06C764FBBDC0" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
-                                                            <rect key="frame" x="0.0" y="0.0" width="194" height="126"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="833A9A86-EA59-4E52-99C1-37932A7C6D62" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
+                                                            <rect key="frame" x="0.0" y="0.0" width="194" height="127"/>
                                                             <accessibility key="accessibilityConfiguration" identifier="photo"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="150" id="1JS-Z7-LSd"/>
@@ -123,7 +123,7 @@
         <!--Item-->
         <scene sceneID="4pG-b1-sQL">
             <objects>
-                <viewController id="GZG-qe-PhC" sceneMemberID="viewController">
+                <viewController id="GZG-qe-PhC" customClass="SecondViewController" customModule="TeamSwift_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wVt-EE-0my"/>
                         <viewControllerLayoutGuide type="bottom" id="YRX-v1-jwy"/>
@@ -138,10 +138,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="highlightedColor" white="0.45000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No QR Code Detected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljN-QO-SsE">
+                                <rect key="frame" x="0.0" y="499" width="600" height="52"/>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YRX-v1-jwy" firstAttribute="top" secondItem="ljN-QO-SsE" secondAttribute="bottom" id="96X-Ic-Dzc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ljN-QO-SsE" secondAttribute="trailing" constant="-20" id="ENj-ke-M29"/>
+                            <constraint firstItem="ljN-QO-SsE" firstAttribute="leading" secondItem="eLC-tl-O2l" secondAttribute="leadingMargin" constant="-20" id="k30-8E-PVT"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="second" id="PS3-RC-y6T"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="ljN-QO-SsE" id="7L6-Pq-WMW"/>
+                        <outlet property="view" destination="eLC-tl-O2l" id="BjT-YB-rdk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdz-ng-XLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,7 +165,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="F1633622-D767-41E5-8651-06C764FBBDC0" width="300" height="260">
+        <image name="833A9A86-EA59-4E52-99C1-37932A7C6D62" width="300" height="260">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
