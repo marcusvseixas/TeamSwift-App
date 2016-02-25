@@ -26,7 +26,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-82" y="-40"/>
+            <point key="canvasLocation" x="-386" y="-304"/>
         </scene>
         <!--Feed-->
         <scene sceneID="kwu-uz-5Cs">
@@ -54,7 +54,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="B159D3EC-819B-407D-9658-CE5C630C53E9" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5D67AA87-F9E0-452D-9F20-E1557CA4137E" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
                                             <rect key="frame" x="33" y="38" width="100" height="100"/>
                                             <accessibility key="accessibilityConfiguration" identifier="photo"/>
                                         </imageView>
@@ -87,7 +87,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="708" y="-445"/>
+            <point key="canvasLocation" x="1236" y="-277"/>
         </scene>
         <!--Item-->
         <scene sceneID="4pG-b1-sQL">
@@ -130,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdz-ng-XLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="916" y="336"/>
+            <point key="canvasLocation" x="1236" y="640"/>
         </scene>
         <!--Home-->
         <scene sceneID="XHl-pb-lj0">
@@ -180,7 +180,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEn-GY-fI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="aRm-W7-g1Y"/>
             </objects>
-            <point key="canvasLocation" x="-346" y="748"/>
+            <point key="canvasLocation" x="-386" y="658"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yG3-6J-23J">
@@ -239,7 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyR-e6-qhM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-346" y="1550"/>
+            <point key="canvasLocation" x="-394" y="1550"/>
         </scene>
         <!--Camera-->
         <scene sceneID="tae-6a-ZXm">
@@ -253,29 +253,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rZ-fn-sPO">
-                                <rect key="frame" x="116" y="374" width="88" height="30"/>
-                                <state key="normal" title="Select Photo"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83r-K7-9sj">
-                                <rect key="frame" x="119" y="324" width="82" height="30"/>
-                                <state key="normal" title="Take photo"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VDZ-wt-ZKw">
-                                <rect key="frame" x="0.0" y="20" width="320" height="279"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lpk-Xg-GPt">
+                                <rect key="frame" x="20" y="20" width="560" height="339"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VDZ-wt-ZKw">
+                                        <rect key="frame" x="120" y="0.0" width="320" height="279"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83r-K7-9sj">
+                                        <rect key="frame" x="242" y="279" width="77" height="30"/>
+                                        <state key="normal" title="Take photo"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rZ-fn-sPO">
+                                        <rect key="frame" x="236" y="309" width="88" height="30"/>
+                                        <state key="normal" title="Select Photo"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lpk-Xg-GPt" firstAttribute="top" secondItem="xNg-df-b1z" secondAttribute="topMargin" constant="20" id="5AJ-KG-vIp"/>
+                            <constraint firstItem="lpk-Xg-GPt" firstAttribute="leading" secondItem="xNg-df-b1z" secondAttribute="leadingMargin" id="A6L-EZ-MAy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lpk-Xg-GPt" secondAttribute="trailing" id="V9p-eY-OVj"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Camera" image="Camera" selectedImage="Camera.png" id="ZKC-jJ-lbP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S1x-cq-FV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="806" y="1284"/>
+            <point key="canvasLocation" x="1236" y="1550"/>
         </scene>
     </scenes>
     <resources>
-        <image name="B159D3EC-819B-407D-9658-CE5C630C53E9" width="300" height="260">
+        <image name="5D67AA87-F9E0-452D-9F20-E1557CA4137E" width="300" height="260">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
