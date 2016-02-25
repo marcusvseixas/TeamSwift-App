@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04EEF85D1C7FB349002ADCF5 /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EEF85A1C7FB349002ADCF5 /* Camera.png */; };
-		04EEF85E1C7FB349002ADCF5 /* home food 128 128.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EEF85B1C7FB349002ADCF5 /* home food 128 128.png */; };
-		04EEF85F1C7FB349002ADCF5 /* home 32 by 32.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EEF85C1C7FB349002ADCF5 /* home 32 by 32.png */; };
 		7591D4CF1C6D4ADC0052658E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591D4CE1C6D4ADC0052658E /* AppDelegate.swift */; };
 		7591D4D11C6D4ADC0052658E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591D4D01C6D4ADC0052658E /* FirstViewController.swift */; };
 		7591D4D31C6D4ADC0052658E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591D4D21C6D4ADC0052658E /* SecondViewController.swift */; };
@@ -42,9 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04EEF85A1C7FB349002ADCF5 /* Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Camera.png; path = ../../Downloads/Camera.png; sourceTree = "<group>"; };
-		04EEF85B1C7FB349002ADCF5 /* home food 128 128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home food 128 128.png"; path = "../../Downloads/home food 128 128.png"; sourceTree = "<group>"; };
-		04EEF85C1C7FB349002ADCF5 /* home 32 by 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home 32 by 32.png"; path = "../../Downloads/home 32 by 32.png"; sourceTree = "<group>"; };
 		7591D4CB1C6D4ADC0052658E /* TeamSwift-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TeamSwift-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7591D4CE1C6D4ADC0052658E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7591D4D01C6D4ADC0052658E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -121,9 +115,6 @@
 				E345F1661C75B586000C3F6B /* TabBarViewController.swift */,
 				E345F1621C756E1B000C3F6B /* Meal.swift */,
 				7591D4D71C6D4ADC0052658E /* Assets.xcassets */,
-				04EEF85A1C7FB349002ADCF5 /* Camera.png */,
-				04EEF85B1C7FB349002ADCF5 /* home food 128 128.png */,
-				04EEF85C1C7FB349002ADCF5 /* home 32 by 32.png */,
 				7591D4D91C6D4ADC0052658E /* LaunchScreen.storyboard */,
 				7591D4DC1C6D4ADC0052658E /* Info.plist */,
 				E345F15E1C7564D2000C3F6B /* MealTableViewCell.swift */,
@@ -255,10 +246,7 @@
 			files = (
 				7591D4DB1C6D4ADC0052658E /* LaunchScreen.storyboard in Resources */,
 				7591D4D81C6D4ADC0052658E /* Assets.xcassets in Resources */,
-				04EEF85D1C7FB349002ADCF5 /* Camera.png in Resources */,
-				04EEF85F1C7FB349002ADCF5 /* home 32 by 32.png in Resources */,
 				7591D4D61C6D4ADC0052658E /* Main.storyboard in Resources */,
-				04EEF85E1C7FB349002ADCF5 /* home food 128 128.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
