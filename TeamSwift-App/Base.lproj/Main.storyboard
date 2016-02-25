@@ -179,18 +179,15 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yBn-p0-s9n">
                                 <rect key="frame" x="96" y="92" width="408" height="338"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="home food 128 128" translatesAutoresizingMaskIntoConstraints="NO" id="ffX-Iq-nKY">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home food 128 128" translatesAutoresizingMaskIntoConstraints="NO" id="ffX-Iq-nKY">
                                         <rect key="frame" x="140" y="0.0" width="128" height="128"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yK-FS-rCu">
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yK-FS-rCu">
                                         <rect key="frame" x="158" y="128" width="93" height="165"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="wWI-To-okf" kind="push" id="GMJ-8D-7lj"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fag-px-2dg">
                                         <rect key="frame" x="169" y="293" width="71" height="45"/>
@@ -213,6 +210,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="home 32 by 32" id="oKB-Ps-a1c"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEn-GY-fI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="aRm-W7-g1Y"/>
             </objects>
             <point key="canvasLocation" x="-346" y="748"/>
         </scene>
@@ -273,7 +271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyR-e6-qhM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-346" y="1582"/>
+            <point key="canvasLocation" x="-346" y="1550"/>
         </scene>
         <!--Camera-->
         <scene sceneID="tae-6a-ZXm">
@@ -301,7 +299,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Camera" image="Camera.png" id="ZKC-jJ-lbP"/>
+                    <tabBarItem key="tabBarItem" title="Camera" image="Camera" selectedImage="Camera.png" id="ZKC-jJ-lbP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S1x-cq-FV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5563,6 +5561,7 @@ AATM6gAEzOwABMzxAATM+QAEzPwABM0BAATNCQAEzQwABM0eAATNIQAEzSYAAAAAAAAEAQAAAAAAAABB
 AAAAAAAAAAAAAAAAAATNKA
 </mutableData>
         </image>
+        <image name="Camera" width="32" height="32"/>
         <image name="Camera.png" width="32" height="32"/>
         <image name="FoodFeed" width="50" height="50"/>
         <image name="home 32 by 32" width="32" height="32"/>
