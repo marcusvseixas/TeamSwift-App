@@ -17,20 +17,38 @@
             endingLineNumber = "10"
             landmarkName = "Meal"
             landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TeamSwift-App/SecondViewController.swift"
-            timestampString = "478114308.356723"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TeamSwift_App.Meal.__deallocating_deinit"
+                  moduleName = "TeamSwift-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samster845/Desktop/INF496/TeamSwift-App/TeamSwift-App/Meal.swift"
+                  timestampString = "478136262.437205"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TeamSwift_App.Meal.deinit"
+                  moduleName = "TeamSwift-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samster845/Desktop/INF496/TeamSwift-App/TeamSwift-App/Meal.swift"
+                  timestampString = "478136262.43747"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
