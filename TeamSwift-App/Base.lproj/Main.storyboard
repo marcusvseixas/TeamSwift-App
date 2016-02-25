@@ -38,11 +38,11 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="175"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oVf-k0-vsI" id="Jo4-pV-8fq">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="174.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="174"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="15c-bC-QPC">
-                                            <rect key="frame" x="8" y="8" width="584" height="159"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="15c-bC-QPC">
+                                            <rect key="frame" x="8" y="8" width="584" height="158"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seP-fg-KQ4">
                                                     <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
@@ -51,10 +51,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yrb-Uh-FG7">
-                                                    <rect key="frame" x="0.0" y="33" width="584" height="127"/>
+                                                    <rect key="frame" x="0.0" y="33" width="584" height="125"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="833A9A86-EA59-4E52-99C1-37932A7C6D62" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
-                                                            <rect key="frame" x="0.0" y="0.0" width="194" height="127"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="006B6DBE-7817-4416-B131-BAF9DEA61A72" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
+                                                            <rect key="frame" x="0.0" y="0.0" width="194" height="125"/>
                                                             <accessibility key="accessibilityConfiguration" identifier="photo"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="150" id="1JS-Z7-LSd"/>
@@ -165,7 +165,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="833A9A86-EA59-4E52-99C1-37932A7C6D62" width="300" height="260">
+        <image name="006B6DBE-7817-4416-B131-BAF9DEA61A72" width="300" height="260">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
