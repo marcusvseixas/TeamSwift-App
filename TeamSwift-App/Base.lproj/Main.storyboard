@@ -44,6 +44,52 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="174.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="15c-bC-QPC">
+                                            <rect key="frame" x="8" y="8" width="584" height="158"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seP-fg-KQ4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yrb-Uh-FG7">
+                                                    <rect key="frame" x="0.0" y="33" width="584" height="125"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="006B6DBE-7817-4416-B131-BAF9DEA61A72" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
+                                                            <rect key="frame" x="0.0" y="0.0" width="194" height="125"/>
+                                                            <accessibility key="accessibilityConfiguration" identifier="photo"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="150" id="1JS-Z7-LSd"/>
+                                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="EIj-5Q-LIG"/>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="bQt-Oq-tfD"/>
+                                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="pUC-BU-4x0"/>
+                                                                <constraint firstAttribute="width" constant="150" id="un8-E2-tUc"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="x8j-0Z-o9N"/>
+                                                            </constraints>
+                                                            <variation key="default">
+                                                                <mask key="constraints">
+                                                                    <exclude reference="1JS-Z7-LSd"/>
+                                                                    <exclude reference="EIj-5Q-LIG"/>
+                                                                    <exclude reference="pUC-BU-4x0"/>
+                                                                    <exclude reference="un8-E2-tUc"/>
+                                                                </mask>
+                                                            </variation>
+                                                        </imageView>
+                                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d5q-Kl-LQi">
+                                                            <rect key="frame" x="194" y="0.0" width="390" height="100"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="d5q-Kl-LQi" secondAttribute="trailing" id="2r5-pt-ScY"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Xcr-ob-PFH" secondAttribute="bottom" id="SBI-7c-4UA"/>
+                                                        <constraint firstItem="Xcr-ob-PFH" firstAttribute="top" secondItem="yrb-Uh-FG7" secondAttribute="top" id="SZ0-IX-YEW"/>
+                                                        <constraint firstItem="Xcr-ob-PFH" firstAttribute="leading" secondItem="yrb-Uh-FG7" secondAttribute="leading" id="azS-Xs-cfm"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d5q-Kl-LQi">
                                             <rect key="frame" x="202" y="38" width="390" height="128"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
