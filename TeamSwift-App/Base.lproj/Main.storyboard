@@ -130,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdz-ng-XLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="220"/>
+            <point key="canvasLocation" x="916" y="336"/>
         </scene>
         <!--Home-->
         <scene sceneID="XHl-pb-lj0">
@@ -175,11 +175,71 @@
                             <constraint firstAttribute="trailingMargin" secondItem="yBn-p0-s9n" secondAttribute="trailing" constant="76" id="Woa-ZE-n7F"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="home 32 by 32.png" id="oKB-Ps-a1c"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home 32 by 32" id="oKB-Ps-a1c"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEn-GY-fI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="aRm-W7-g1Y"/>
             </objects>
-            <point key="canvasLocation" x="-134" y="1292"/>
+            <point key="canvasLocation" x="-346" y="748"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yG3-6J-23J">
+            <objects>
+                <viewController id="wWI-To-okf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SA2-JF-8ut"/>
+                        <viewControllerLayoutGuide type="bottom" id="nC9-wc-ZpY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6US-7v-Fa7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngB-QL-1WM">
+                                <rect key="frame" x="61" y="116" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xb9-Gn-Imd">
+                                <rect key="frame" x="211" y="107" width="179" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6O7-vS-lFN">
+                                <rect key="frame" x="62" y="206" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f7q-04-x9z">
+                                <rect key="frame" x="211" y="197" width="179" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wf-ek-vW7">
+                                <rect key="frame" x="211" y="273" width="369" height="154"/>
+                                <date key="date" timeIntervalSinceReferenceDate="478132879.05144">
+                                    <!--2016-02-25 22:41:19 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date of birth:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9J-9g-mMP">
+                                <rect key="frame" x="53" y="339" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ka-aO-BvQ">
+                                <rect key="frame" x="282" y="524" width="36" height="30"/>
+                                <state key="normal" title="Send"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PPJ-hd-7zM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gyR-e6-qhM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-346" y="1550"/>
         </scene>
         <!--Camera-->
         <scene sceneID="tae-6a-ZXm">
@@ -207,7 +267,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Camera" image="Camera.png" id="ZKC-jJ-lbP"/>
+                    <tabBarItem key="tabBarItem" title="Camera" image="Camera" selectedImage="Camera.png" id="ZKC-jJ-lbP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S1x-cq-FV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
