@@ -54,7 +54,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5D67AA87-F9E0-452D-9F20-E1557CA4137E" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="385F4ACA-A04E-4604-9228-9A57221C45CD" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
                                             <rect key="frame" x="33" y="38" width="100" height="100"/>
                                             <accessibility key="accessibilityConfiguration" identifier="photo"/>
                                         </imageView>
@@ -253,18 +253,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lpk-Xg-GPt">
-                                <rect key="frame" x="20" y="20" width="560" height="339"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lpk-Xg-GPt">
+                                <rect key="frame" x="20" y="20" width="560" height="531"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VDZ-wt-ZKw">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VDZ-wt-ZKw">
                                         <rect key="frame" x="120" y="0.0" width="320" height="279"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83r-K7-9sj">
-                                        <rect key="frame" x="242" y="279" width="77" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83r-K7-9sj">
+                                        <rect key="frame" x="242" y="279" width="77" height="222"/>
                                         <state key="normal" title="Take photo"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rZ-fn-sPO">
-                                        <rect key="frame" x="236" y="309" width="88" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rZ-fn-sPO">
+                                        <rect key="frame" x="236" y="501" width="88" height="30"/>
                                         <state key="normal" title="Select Photo"/>
                                     </button>
                                 </subviews>
@@ -275,6 +275,7 @@
                             <constraint firstItem="lpk-Xg-GPt" firstAttribute="top" secondItem="xNg-df-b1z" secondAttribute="topMargin" constant="20" id="5AJ-KG-vIp"/>
                             <constraint firstItem="lpk-Xg-GPt" firstAttribute="leading" secondItem="xNg-df-b1z" secondAttribute="leadingMargin" id="A6L-EZ-MAy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lpk-Xg-GPt" secondAttribute="trailing" id="V9p-eY-OVj"/>
+                            <constraint firstItem="4Xz-86-84m" firstAttribute="top" secondItem="lpk-Xg-GPt" secondAttribute="bottom" id="izm-kb-lG3"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Camera" image="Camera" selectedImage="Camera.png" id="ZKC-jJ-lbP"/>
@@ -285,7 +286,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="5D67AA87-F9E0-452D-9F20-E1557CA4137E" width="300" height="260">
+        <image name="385F4ACA-A04E-4604-9228-9A57221C45CD" width="300" height="260">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
