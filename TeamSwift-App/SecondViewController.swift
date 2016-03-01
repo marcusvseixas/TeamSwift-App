@@ -42,7 +42,7 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         
         // Set delegate and use the default dispatch queue to execute the call back
         captureMetadataOutput.setMetadataObjectsDelegate(self, queue: dispatch_get_main_queue())
-        captureMetadataOutput.metadataObjectTypes = [AVMetadataObjectTypeQRCode]
+        captureMetadataOutput.metadataObjectTypes = [AVMetadataObjectTypeEAN13Code]
   
         // Initialize the video preview layer and add it as a sublayer to the viewPreview view's layer.
         videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
@@ -69,14 +69,14 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         if metadataObjects == nil || metadataObjects.count  == 0{
             
             qrCodeFrameView?.frame = CGRectZero
-            messageLabel.text = "No QR Code Detected"
+            messageLabel.text = "No Code Detected"
             return
         }
         
         // Get the metadata object
         let metadataObj  = metadataObjects[0] as! AVMetadataMachineReadableCodeObject
         
-        if metadataObj.type == AVMetadataObjectTypeQRCode{
+        if metadataObj.type == AVMetadataObjectTypeEAN13Code{
             // If the found metadata is equal to the QR code metadata then update the status label's text and set the bounds
             
             let barCodeObject = videoPreviewLayer?.transformedMetadataObjectForMetadataObject(metadataObj as AVMetadataMachineReadableCodeObject) as! AVMetadataMachineReadableCodeObject
