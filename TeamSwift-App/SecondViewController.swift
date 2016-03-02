@@ -67,7 +67,7 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             view.bringSubviewToFront(qrCodeFrameView!)
         }
         else{ // If device has no camera or camera cannot be detected, then display a message
-            messageLabel.text = "No Camera Detected, Please Use A Device With A Camera"
+            messageLabel.text = "No Camera Detected, Cannot Scan"
             return
         }
     }
@@ -77,7 +77,7 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         if metadataObjects == nil || metadataObjects.count  == 0{
             
             qrCodeFrameView?.frame = CGRectZero
-            messageLabel.text = "No QR Code Detected"
+            messageLabel.text = "No Code Detected"
             return
         }
         
