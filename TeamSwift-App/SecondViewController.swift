@@ -38,9 +38,14 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         
         let captureMetadataOutput = AVCaptureMetadataOutput()
         
-        // Set delegate and use the default dispatch queue to execute the call back
-        captureMetadataOutput.setMetadataObjectsDelegate(self, queue: dispatch_get_main_queue())
-        captureMetadataOutput.metadataObjectTypes = [AVMetadataObjectTypeEAN13Code]
+        // Tests to see if the device has a camera or not
+        if ((captureSession?.canAddOutput(captureMetadataOutput)) != nil) {
+            captureSession?.addOutput(captureMetadataOutput)
+        
+            // Set delegate and use the default dispatch queue to execute the call back
+            captureMetadataOutput.setMetadataObjectsDelegate(self, queue: dispatch_get_main_queue())
+            // These are all of the types of codes that the device can scan
+            captureMetadataOutput.metadataObjectTypes = [AVMetadataObjectTypeQRCode,AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypePDF417Code]
   
             // Initialize the video preview layer and add it as a sublayer to the viewPreview view's layer.
             videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
@@ -62,7 +67,7 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             view.bringSubviewToFront(qrCodeFrameView!)
         }
         else{ // If device has no camera or camera cannot be detected, then display a message
-            messageLabel.text = "No Camera Detected, Please Use A Device With A Camera"
+            messageLabel.text = "No Camera Detected, Cannot Scan"
             return
         }
     }
@@ -81,10 +86,8 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             // Get the metadata object
             let metadataObj  = metadataObjects[i] as! AVMetadataMachineReadableCodeObject
         
-        if metadataObj.type == AVMetadataObjectTypeEAN13Code{
-            // If the found metadata is equal to the QR code metadata then update the status label's text and set the bounds
-            
-            let barCodeObject = videoPreviewLayer?.transformedMetadataObjectForMetadataObject(metadataObj as AVMetadataMachineReadableCodeObject) as! AVMetadataMachineReadableCodeObject
+            if metadataObj.type == AVMetadataObjectTypeQRCode || metadataObj.type == AVMetadataObjectTypeEAN8Code || metadataObj.type == AVMetadataObjectTypeEAN13Code || metadataObj.type == AVMetadataObjectTypePDF417Code{
+                // If the found metadata is equal to the QR code metadata then update the status label's text and set the bounds
             
                 let barCodeObject = videoPreviewLayer?.transformedMetadataObjectForMetadataObject(metadataObj as AVMetadataMachineReadableCodeObject) as!   AVMetadataMachineReadableCodeObject
             
