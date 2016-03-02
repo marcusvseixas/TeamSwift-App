@@ -1,10 +1,8 @@
-//
 //  SecondViewController.swift
 //  TeamSwift-App
-//
-//  Created by Marcus Vinicius Seixas on 11/02/16.
-//
-// The code here was adapted from a tutorial found at http://www.appcoda.com/qr-code-reader-swift/
+//  This program will handle the scanning of barcodes and detecting cameras on devices
+//  The code here was adapted from a tutorial found at http://www.appcoda.com/qr-code-reader-swift/
+
 import UIKit
 import AVFoundation
 
