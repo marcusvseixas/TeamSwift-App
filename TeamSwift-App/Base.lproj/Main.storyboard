@@ -53,9 +53,8 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yrb-Uh-FG7">
                                                     <rect key="frame" x="0.0" y="59" width="490" height="100"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DA895A95-FA71-484F-BAEB-4F1FF65ACABB" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FoodFeed" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ob-PFH">
                                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                                            <accessibility key="accessibilityConfiguration" identifier="photo"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="150" id="1JS-Z7-LSd"/>
                                                                 <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="EIj-5Q-LIG"/>
@@ -99,8 +98,6 @@
                                 <connections>
                                     <outlet property="nameLabel" destination="seP-fg-KQ4" id="lDX-08-N93"/>
                                     <outlet property="photoImageView" destination="Xcr-ob-PFH" id="5gq-ow-vUe"/>
-                                    <outletCollection property="gestureRecognizers" destination="NYM-wa-x41" appends="YES" id="AX0-ck-5BR"/>
-                                    <outletCollection property="gestureRecognizers" destination="NYM-wa-x41" appends="YES" id="aaU-eC-HD4"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -112,11 +109,6 @@
                     <tabBarItem key="tabBarItem" title="Feed" image="FoodFeed" id="4UQ-p2-mfv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yyV-ax-NvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="NYM-wa-x41">
-                    <connections>
-                        <outlet property="delegate" destination="A6x-sH-ES6" id="YJz-Nv-KM8"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="708" y="-445"/>
         </scene>
@@ -167,7 +159,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="DA895A95-FA71-484F-BAEB-4F1FF65ACABB" width="29" height="29"/>
         <image name="FoodFeed" width="50" height="50"/>
         <image name="second" width="30" height="30"/>
     </resources>
