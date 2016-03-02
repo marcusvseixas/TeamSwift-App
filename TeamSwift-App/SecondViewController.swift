@@ -82,7 +82,7 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         }
         
         // Run once to test for each type of metadata object, not just a QR
-        for i in 1 ..< metadataObjects.count{
+        for i in 0 ..< metadataObjects.count{
             // Get the metadata object
             let metadataObj  = metadataObjects[i] as! AVMetadataMachineReadableCodeObject
         
