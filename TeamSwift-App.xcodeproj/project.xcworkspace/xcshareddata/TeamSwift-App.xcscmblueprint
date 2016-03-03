@@ -1,22 +1,22 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++9A4E3A6",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++E6B3177",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++9A4E3A6" : 0,
-    "86937C9DD94460C97C6E77257F65BB661DFB4310+++B00F329" : 0,
-    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++C37D2A1" : 0,
-    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++2887567" : 0,
-    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++6973626" : 0
+    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++E6B3177" : 0,
+    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++F555E63" : 0,
+    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++3DE79C3" : 0,
+    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++8CF3725" : 0,
+    "86937C9DD94460C97C6E77257F65BB661DFB4310+++4330A38" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E32D96AB-ADBB-4ADB-BE87-612B795FD834",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++9A4E3A6" : "TeamSwift-App\/",
-    "86937C9DD94460C97C6E77257F65BB661DFB4310+++B00F329" : "",
-    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++C37D2A1" : "SW-TeamSwift-App\/TeamSwift-App\/",
-    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++2887567" : "SW-TeamSwift-App\/TeamSwift-App\/",
-    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++6973626" : "SW-TeamSwift-App\/"
+    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++E6B3177" : "TeamSwift-App\/",
+    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++F555E63" : "SW-TeamSwift-App\/TeamSwift-App\/",
+    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++3DE79C3" : "SW-TeamSwift-App\/TeamSwift-App\/",
+    "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++8CF3725" : "SW-TeamSwift-App\/",
+    "86937C9DD94460C97C6E77257F65BB661DFB4310+++4330A38" : ""
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "TeamSwift-App",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -25,27 +25,27 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/marcusvseixas\/TeamSwift-App.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++2887567"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++3DE79C3"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/marcusvseixas\/TeamSwift-App.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++6973626"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++8CF3725"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/marcusvseixas\/TeamSwift-App.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++9A4E3A6"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++E6B3177"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/marcusvseixas\/TeamSwift-App.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++C37D2A1"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03D5A9A21F35D2D79BBED579683EB7BD677A7404+++F555E63"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sjw787\/TeamSwift-SW-App.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "86937C9DD94460C97C6E77257F65BB661DFB4310+++B00F329"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "86937C9DD94460C97C6E77257F65BB661DFB4310+++4330A38"
     }
   ]
 }
