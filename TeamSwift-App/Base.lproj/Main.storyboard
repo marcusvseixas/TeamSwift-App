@@ -124,12 +124,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Add Some Food" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Od5-KH-Xaj">
-                                <rect key="frame" x="0.0" y="20" width="600" height="23"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <color key="highlightedColor" white="0.45000000000000001" alpha="1" colorSpace="calibratedWhite"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No QR Code Detected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljN-QO-SsE">
                                 <rect key="frame" x="0.0" y="499" width="600" height="52"/>
                                 <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -137,14 +131,47 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cxk-Od-mls">
+                                <rect key="frame" x="20" y="229" width="560" height="143"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Add Some Food" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Od5-KH-Xaj">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="23"/>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="30" right="0.0"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="highlightedColor" white="0.45000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Food Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R6d-tf-9bO">
+                                        <rect key="frame" x="0.0" y="23" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Food Description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2OJ-lv-5BW">
+                                        <rect key="frame" x="0.0" y="53" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlM-yY-elN">
+                                        <rect key="frame" x="0.0" y="83" width="560" height="30"/>
+                                        <state key="normal" title="Add Food"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6n-GD-JhR">
+                                        <rect key="frame" x="0.0" y="113" width="560" height="30"/>
+                                        <state key="normal" title="Scan Food"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="GZG-qe-PhC" eventType="touchUpInside" id="ncC-k6-iCN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Od5-KH-Xaj" secondAttribute="trailing" constant="-20" id="4pU-W5-Q3J"/>
                             <constraint firstItem="YRX-v1-jwy" firstAttribute="top" secondItem="ljN-QO-SsE" secondAttribute="bottom" id="96X-Ic-Dzc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ljN-QO-SsE" secondAttribute="trailing" constant="-20" id="ENj-ke-M29"/>
-                            <constraint firstItem="Od5-KH-Xaj" firstAttribute="leading" secondItem="eLC-tl-O2l" secondAttribute="leadingMargin" constant="-20" id="XD1-wJ-W5q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cxk-Od-mls" secondAttribute="trailing" id="dmx-ot-cBE"/>
                             <constraint firstItem="ljN-QO-SsE" firstAttribute="leading" secondItem="eLC-tl-O2l" secondAttribute="leadingMargin" constant="-20" id="k30-8E-PVT"/>
+                            <constraint firstItem="cxk-Od-mls" firstAttribute="leading" secondItem="eLC-tl-O2l" secondAttribute="leadingMargin" id="wXK-n6-ZUz"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="second" id="PS3-RC-y6T"/>
@@ -155,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdz-ng-XLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="220"/>
+            <point key="canvasLocation" x="752" y="258"/>
         </scene>
     </scenes>
     <resources>
