@@ -154,6 +154,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlM-yY-elN">
                                         <rect key="frame" x="0.0" y="83" width="560" height="30"/>
                                         <state key="normal" title="Add Food"/>
+                                        <connections>
+                                            <action selector="addFood:" destination="GZG-qe-PhC" eventType="touchUpInside" id="Bty-6y-cnf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6n-GD-JhR">
                                         <rect key="frame" x="0.0" y="113" width="560" height="30"/>
@@ -182,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdz-ng-XLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="752" y="258"/>
+            <point key="canvasLocation" x="708" y="258"/>
         </scene>
     </scenes>
     <resources>

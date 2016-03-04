@@ -19,6 +19,14 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         viewDidLoad()
     }
     
+    @IBAction func addFood(sender: AnyObject) {
+        let thirdViewController:ThirdViewController = ThirdViewController()
+        
+        self.presentViewController(thirdViewController, animated: true, completion: nil)
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

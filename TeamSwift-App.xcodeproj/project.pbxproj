@@ -19,6 +19,7 @@
 		E345F1611C756C06000C3F6B /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E345F1601C756C06000C3F6B /* MealTableViewController.swift */; };
 		E345F1631C756E1B000C3F6B /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E345F1621C756E1B000C3F6B /* Meal.swift */; };
 		E345F1671C75B586000C3F6B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E345F1661C75B586000C3F6B /* TabBarViewController.swift */; };
+		E38D65BB1C8901F0007C3077 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38D65BA1C8901F0007C3077 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E345F1601C756C06000C3F6B /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 		E345F1621C756E1B000C3F6B /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		E345F1661C75B586000C3F6B /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		E38D65BA1C8901F0007C3077 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +89,6 @@
 		7591D4C21C6D4ADC0052658E = {
 			isa = PBXGroup;
 			children = (
-				754CDCAF1C7FBB09002370D0 /* .gitignore */,
 				7591D4CD1C6D4ADC0052658E /* TeamSwift-App */,
 				7591D4E41C6D4ADC0052658E /* TeamSwift-AppTests */,
 				7591D4EF1C6D4ADC0052658E /* TeamSwift-AppUITests */,
@@ -113,6 +114,7 @@
 				7591D4D21C6D4ADC0052658E /* SecondViewController.swift */,
 				7591D4D41C6D4ADC0052658E /* Main.storyboard */,
 				E345F1601C756C06000C3F6B /* MealTableViewController.swift */,
+				E38D65BA1C8901F0007C3077 /* ThirdViewController.swift */,
 				E345F1661C75B586000C3F6B /* TabBarViewController.swift */,
 				E345F1621C756E1B000C3F6B /* Meal.swift */,
 				7591D4D71C6D4ADC0052658E /* Assets.xcassets */,
@@ -246,7 +248,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7591D4DB1C6D4ADC0052658E /* LaunchScreen.storyboard in Resources */,
-				754CDCB01C7FBB09002370D0 /* .gitignore in Resources */,
 				7591D4D81C6D4ADC0052658E /* Assets.xcassets in Resources */,
 				7591D4D61C6D4ADC0052658E /* Main.storyboard in Resources */,
 			);
@@ -279,6 +280,7 @@
 				7591D4CF1C6D4ADC0052658E /* AppDelegate.swift in Sources */,
 				E345F1671C75B586000C3F6B /* TabBarViewController.swift in Sources */,
 				E345F1631C756E1B000C3F6B /* Meal.swift in Sources */,
+				E38D65BB1C8901F0007C3077 /* ThirdViewController.swift in Sources */,
 				7591D4D11C6D4ADC0052658E /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
