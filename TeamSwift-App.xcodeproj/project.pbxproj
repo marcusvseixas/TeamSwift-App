@@ -210,7 +210,7 @@
 				TargetAttributes = {
 					7591D4CA1C6D4ADC0052658E = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = NLQUV82R7T;
+						DevelopmentTeam = 5ZEQ45VQL2;
 					};
 					7591D4E01C6D4ADC0052658E = {
 						CreatedOnToolsVersion = 7.2;
@@ -427,7 +427,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "TeamSwift-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "tsa.TeamSwift-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "tsa.TeamSwift-App.Marcus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -441,7 +441,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "TeamSwift-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "tsa.TeamSwift-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "tsa.TeamSwift-App.Marcus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
