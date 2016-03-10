@@ -87,7 +87,6 @@
 		7591D4C21C6D4ADC0052658E = {
 			isa = PBXGroup;
 			children = (
-				754CDCAF1C7FBB09002370D0 /* .gitignore */,
 				7591D4CD1C6D4ADC0052658E /* TeamSwift-App */,
 				7591D4E41C6D4ADC0052658E /* TeamSwift-AppTests */,
 				7591D4EF1C6D4ADC0052658E /* TeamSwift-AppUITests */,
@@ -208,7 +207,7 @@
 				TargetAttributes = {
 					7591D4CA1C6D4ADC0052658E = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = NLQUV82R7T;
+						DevelopmentTeam = 5ZEQ45VQL2;
 					};
 					7591D4E01C6D4ADC0052658E = {
 						CreatedOnToolsVersion = 7.2;
@@ -246,7 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7591D4DB1C6D4ADC0052658E /* LaunchScreen.storyboard in Resources */,
-				754CDCB01C7FBB09002370D0 /* .gitignore in Resources */,
 				7591D4D81C6D4ADC0052658E /* Assets.xcassets in Resources */,
 				7591D4D61C6D4ADC0052658E /* Main.storyboard in Resources */,
 			);
@@ -425,7 +423,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "TeamSwift-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "tsa.TeamSwift-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "tsa.TeamSwift-App.Marcus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -439,7 +437,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "TeamSwift-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "tsa.TeamSwift-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "tsa.TeamSwift-App.Marcus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
