@@ -82,8 +82,9 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         if metadataObjects == nil || metadataObjects.count  == 0{
             
             qrCodeFrameView?.frame = CGRectZero
-            messageLabel.text = "No Code Detected"
+            messageLabel.text = "No QR code Detected"
             return
+            print("hello")
         }
         
         // Run once to test for each type of metadata object, not just a QR
@@ -99,12 +100,56 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
                 qrCodeFrameView?.frame = barCodeObject.bounds;
             
                 if metadataObj.stringValue != nil {
-                    messageLabel.text = metadataObj.stringValue
+                    messageLabel.text = getJSON("https://api.outpan.com/v2/products/",upc: metadataObj.stringValue,apikey:"?apikey=c6c2561760980843c06d4f5a2b435202")
+                    
+                    let alertController = UIAlertController(title: "Test", message:
+                        getJSON("https://api.outpan.com/v2/products/",upc: metadataObj.stringValue,apikey:"?apikey=c6c2561760980843c06d4f5a2b435202"), preferredStyle: UIAlertControllerStyle.Alert)
+                    alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+                    
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                    print(messageLabel.text!)
+                    
+                    
+                    
+                    
                 }
             }
         }
     }
-
+    
+    func getJSON(outpan: String, upc: String , apikey: String) -> String{
+        
+        var json = NSDictionary()
+        var urlToRequest: String = outpan + upc + apikey
+        
+        if let nsdata: NSData! = NSData(contentsOfURL: NSURL(string: urlToRequest)!)! {
+        do {
+            json = try NSJSONSerialization.JSONObjectWithData(nsdata, options: NSJSONReadingOptions()) as! NSDictionary
+            if let _ = json["error"] {
+                print("deu ruim")
+            }else {
+            print(json["name"])
+            }
+        } catch {
+            print(error)
+        }
+        } else {
+            return "hueheueeh"
+        }
+        return json["name"] as! String
+    }
+    
+    func parseJSON(inputData: NSData) -> NSDictionary{
+        var boardsDictionary: NSDictionary!
+        do {
+            boardsDictionary =  try NSJSONSerialization.JSONObjectWithData(inputData, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
+        } catch {
+            
+        }
+        
+        
+        return boardsDictionary
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

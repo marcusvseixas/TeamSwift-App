@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,11 +19,31 @@
                     <connections>
                         <segue destination="A6x-sH-ES6" kind="relationship" relationship="viewControllers" id="9Ch-6d-Wpv"/>
                         <segue destination="GZG-qe-PhC" kind="relationship" relationship="viewControllers" id="OxB-1Y-oal"/>
+                        <segue destination="fMK-nu-HDq" kind="relationship" relationship="viewControllers" id="Leo-Qz-0oh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4" y="2"/>
+        </scene>
+        <!--Add Recipe-->
+        <scene sceneID="C1g-U0-vrO">
+            <objects>
+                <viewController id="fMK-nu-HDq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7aB-pp-PhN"/>
+                        <viewControllerLayoutGuide type="bottom" id="jKb-Cg-mDc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wSm-ta-ORc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add Recipe" image="pie bar icon" selectedImage="pie bar icon" id="wfO-QM-Gct"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kE1-A5-n95" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="712"/>
         </scene>
         <!--Feed-->
         <scene sceneID="kwu-uz-5Cs">
@@ -106,13 +126,13 @@
                             <outlet property="delegate" destination="A6x-sH-ES6" id="Saf-FE-lNK"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Feed" image="FoodFeed" id="4UQ-p2-mfv"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="first" selectedImage="first" id="4UQ-p2-mfv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yyV-ax-NvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="708" y="-445"/>
         </scene>
-        <!--Item-->
+        <!--Add Food-->
         <scene sceneID="4pG-b1-sQL">
             <objects>
                 <viewController id="GZG-qe-PhC" customClass="SecondViewController" customModule="TeamSwift_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -174,7 +194,7 @@
                             <constraint firstItem="cxk-Od-mls" firstAttribute="leading" secondItem="eLC-tl-O2l" secondAttribute="leadingMargin" id="wXK-n6-ZUz"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="second" id="PS3-RC-y6T"/>
+                    <tabBarItem key="tabBarItem" title="Add Food" image="pizza bar icon" selectedImage="pizza bar icon" id="PS3-RC-y6T"/>
                     <connections>
                         <outlet property="messageLabel" destination="ljN-QO-SsE" id="7L6-Pq-WMW"/>
                         <outlet property="view" destination="eLC-tl-O2l" id="BjT-YB-rdk"/>
@@ -187,6 +207,8 @@
     </scenes>
     <resources>
         <image name="FoodFeed" width="50" height="50"/>
-        <image name="second" width="30" height="30"/>
+        <image name="first" width="30" height="30"/>
+        <image name="pie bar icon" width="29" height="29"/>
+        <image name="pizza bar icon" width="29" height="29"/>
     </resources>
 </document>
