@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -37,13 +37,22 @@
                     <view key="view" contentMode="scaleToFill" id="wSm-ta-ORc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0fo-te-nhb">
+                                <rect key="frame" x="9" y="38" width="583" height="523"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add Recipe" image="pie bar icon" selectedImage="pie bar icon" id="wfO-QM-Gct"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kE1-A5-n95" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="712"/>
+            <point key="canvasLocation" x="-11" y="748"/>
         </scene>
         <!--Feed-->
         <scene sceneID="kwu-uz-5Cs">
@@ -67,7 +76,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seP-fg-KQ4">
                                                     <rect key="frame" x="0.0" y="0.0" width="42" height="47"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yrb-Uh-FG7">
@@ -122,7 +131,7 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="A6x-sH-ES6" id="whT-1I-Qze"/>
+                            <outlet property="dataSource" destination="A6x-sH-ES6" id="ncQ-Dw-ATy"/>
                             <outlet property="delegate" destination="A6x-sH-ES6" id="Saf-FE-lNK"/>
                         </connections>
                     </tableView>
@@ -151,31 +160,34 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cxk-Od-mls">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cxk-Od-mls">
                                 <rect key="frame" x="20" y="229" width="560" height="143"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Add Some Food" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Od5-KH-Xaj">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Some Food" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Od5-KH-Xaj">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="23"/>
                                         <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="30" right="0.0"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="highlightedColor" white="0.45000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Food Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R6d-tf-9bO">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Food Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R6d-tf-9bO">
                                         <rect key="frame" x="0.0" y="23" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Food Description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2OJ-lv-5BW">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Food Description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2OJ-lv-5BW">
                                         <rect key="frame" x="0.0" y="53" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlM-yY-elN">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlM-yY-elN">
                                         <rect key="frame" x="0.0" y="83" width="560" height="30"/>
                                         <state key="normal" title="Add Food"/>
+                                        <connections>
+                                            <action selector="addItem:" destination="GZG-qe-PhC" eventType="touchUpInside" id="AKb-Lk-xiy"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6n-GD-JhR">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6n-GD-JhR">
                                         <rect key="frame" x="0.0" y="113" width="560" height="30"/>
                                         <state key="normal" title="Scan Food"/>
                                         <connections>
@@ -190,6 +202,7 @@
                             <constraint firstItem="YRX-v1-jwy" firstAttribute="top" secondItem="ljN-QO-SsE" secondAttribute="bottom" id="96X-Ic-Dzc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ljN-QO-SsE" secondAttribute="trailing" constant="-20" id="ENj-ke-M29"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cxk-Od-mls" secondAttribute="trailing" id="dmx-ot-cBE"/>
+                            <constraint firstItem="cxk-Od-mls" firstAttribute="centerY" secondItem="eLC-tl-O2l" secondAttribute="centerY" id="fDG-qW-YHB"/>
                             <constraint firstItem="ljN-QO-SsE" firstAttribute="leading" secondItem="eLC-tl-O2l" secondAttribute="leadingMargin" constant="-20" id="k30-8E-PVT"/>
                             <constraint firstItem="cxk-Od-mls" firstAttribute="leading" secondItem="eLC-tl-O2l" secondAttribute="leadingMargin" id="wXK-n6-ZUz"/>
                         </constraints>
@@ -197,6 +210,7 @@
                     <tabBarItem key="tabBarItem" title="Add Food" image="pizza bar icon" selectedImage="pizza bar icon" id="PS3-RC-y6T"/>
                     <connections>
                         <outlet property="messageLabel" destination="ljN-QO-SsE" id="7L6-Pq-WMW"/>
+                        <outlet property="myItemText" destination="R6d-tf-9bO" id="98X-tt-mET"/>
                         <outlet property="view" destination="eLC-tl-O2l" id="BjT-YB-rdk"/>
                     </connections>
                 </viewController>
@@ -208,7 +222,7 @@
     <resources>
         <image name="FoodFeed" width="50" height="50"/>
         <image name="first" width="30" height="30"/>
-        <image name="pie bar icon" width="29" height="29"/>
+        <image name="pie bar icon" width="297" height="199"/>
         <image name="pizza bar icon" width="29" height="29"/>
     </resources>
 </document>

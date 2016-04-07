@@ -6,8 +6,30 @@
 import UIKit
 import AVFoundation
 
+var myItemlist = [String]()
 class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+    @IBOutlet var myItemText: UITextField!
 
+    @IBAction func addItem(sender: AnyObject) {
+        
+        //Validate the text field
+        // put it on a stack
+        //clear the text field
+        
+        if myItemText.text?.characters.count > 0
+        {
+           myItemlist.append(myItemText.text!)
+           myItemText.text = ""
+           self.view.endEditing(true)// ?
+           print(myItemlist)
+            
+            
+        }
+        
+        
+    
+
+    }
     @IBOutlet weak var messageLabel: UILabel!
     var captureSession:AVCaptureSession?
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
