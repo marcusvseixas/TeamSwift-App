@@ -10,6 +10,7 @@ import UIKit
 
 class MealTableViewController: UITableViewController {
 
+    @IBOutlet var foodTableView: UITableView!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -19,14 +20,20 @@ class MealTableViewController: UITableViewController {
     }
     
     // Mark: Properties
-    var meals = [Meal]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Load the sample data
-
-       loadSampleMeals()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        foodTableView.reloadData()
+    }
+    
+    func addFood(newMeal : Meal){
+        meals +=  [newMeal]
+        print("meal added")
     }
 
     func loadSampleMeals(){
@@ -54,6 +61,10 @@ class MealTableViewController: UITableViewController {
         
         
         meals += [meal1,meal2,meal3,meal4,meal5,meal6,meal7]
+    }
+    
+    func loadMeals(){
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -85,6 +96,10 @@ class MealTableViewController: UITableViewController {
         
         if let label = cell.nameLabel{
             label.text = meal.name
+            
+        }
+        if let desc = cell.foodDescription{
+            desc.text = meal.desc
         }
         
         cell.photoImageView.image = meal.photo
