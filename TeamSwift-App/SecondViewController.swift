@@ -6,22 +6,75 @@
 import UIKit
 import AVFoundation
 
-class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+var meals = [Meal]()
 
+class SecondViewController: UIViewController,UIImagePickerControllerDelegate, AVCaptureMetadataOutputObjectsDelegate, UITextFieldDelegate, UINavigationControllerDelegate{
+
+    
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var foodName: UITextField!
+    @IBOutlet weak var foodDesc: UITextField!
+    @IBOutlet weak var foodPic: UIImageView!
+
     var captureSession:AVCaptureSession?
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     var qrCodeFrameView:UIView?
     var isPressed = false
+    
+    @IBAction func dismissKeyboard(sender: AnyObject) {
+        self.view.endEditing(true)
+    }
     
     @IBAction func buttonPressed(sender: AnyObject) {
         isPressed = true
         viewDidLoad()
     }
     
+    @IBOutlet var addFoodView: UIView!
+    
+    
+    override func viewDidAppear(animated: Bool) {
+        self.reloadInputViews()
+    }
+    
+    @IBAction func selectPhoto(sender: AnyObject) {
+        foodName.resignFirstResponder()
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.sourceType = .PhotoLibrary
+        imagePickerController.delegate = self
+        presentViewController(imagePickerController, animated: true, completion: nil)
+    }
+    
+    let defaultImage = UIImage(named: "defaultPhoto")
+
+    @IBAction func addFood(sender: AnyObject) {
+        if foodName.text?.characters.count > 0 && foodDesc.text?.characters.count > 0{
+            let meal = Meal(name: foodName.text!,photo: (foodPic?.image)! ,desc: foodDesc.text!)!
+            meals.append(meal)
+            foodName.text = ""
+            foodDesc.text = ""
+            foodPic.image = defaultImage
+            
+            
+        }
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]){
+        // The info dictionary contains multiple representations of the image, and this uses the original.
+        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        // Set photoImageView to display the selected image.
+        foodPic.image = selectedImage
+        // Dismiss the picker.
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    func imagePickerControllerDidCancel(picker: UIImagePickerController){
+        // Dismiss the picker if the user canceled.
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Get an instance of the AVCaptureDevice class to initialize a device object and provide the video
         // as the media type parameter.
         if(isPressed ==  true){
@@ -39,13 +92,11 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             }
         
             // Initialize a AVCaptureMetadataOutput object and set it as the output device to the capture session.
-        
             let captureMetadataOutput = AVCaptureMetadataOutput()
         
             // Tests to see if the device has a camera or not
             if ((captureSession?.canAddOutput(captureMetadataOutput)) != nil) {
                 captureSession?.addOutput(captureMetadataOutput)
-        
                 // Set delegate and use the default dispatch queue to execute the call back
                 captureMetadataOutput.setMetadataObjectsDelegate(self, queue: dispatch_get_main_queue())
                 // These are all of the types of codes that the device can scan
@@ -83,8 +134,6 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             
             qrCodeFrameView?.frame = CGRectZero
             messageLabel.text = "No QR code Detected"
-            return
-            print("hello")
         }
         
         // Run once to test for each type of metadata object, not just a QR
@@ -120,7 +169,7 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     func getJSON(outpan: String, upc: String , apikey: String) -> String{
         
         var json = NSDictionary()
-        var urlToRequest: String = outpan + upc + apikey
+        let urlToRequest: String = outpan + upc + apikey
         
         if let nsdata: NSData! = NSData(contentsOfURL: NSURL(string: urlToRequest)!)! {
         do {
