@@ -32,11 +32,6 @@ class SecondViewController: UIViewController,UIImagePickerControllerDelegate, AV
     
     @IBOutlet var addFoodView: UIView!
     
-    
-    override func viewDidAppear(animated: Bool) {
-        self.reloadInputViews()
-    }
-    
     @IBAction func selectPhoto(sender: AnyObject) {
         foodName.resignFirstResponder()
         let imagePickerController = UIImagePickerController()
@@ -73,12 +68,19 @@ class SecondViewController: UIViewController,UIImagePickerControllerDelegate, AV
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    override func viewDidAppear(animated: Bool) {
+        self.reloadInputViews()
+        isPressed = false
+        //view.removeFromSuperview()
+        viewDidLoad()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Get an instance of the AVCaptureDevice class to initialize a device object and provide the video
         // as the media type parameter.
         if(isPressed ==  true){
-    
+            //performSegueWithIdentifier("oc", sender: but)
             do {
                 // Get an instance of the AVCaptureDevice class to initialize a device object and provide the video
                 // as the media type parameter.
@@ -107,7 +109,7 @@ class SecondViewController: UIViewController,UIImagePickerControllerDelegate, AV
                 videoPreviewLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
                 videoPreviewLayer?.frame = view.layer.bounds
                 view.layer.addSublayer(videoPreviewLayer!)
-        
+                
                 // Start video capture.
                 captureSession?.startRunning()
         
@@ -159,8 +161,6 @@ class SecondViewController: UIViewController,UIImagePickerControllerDelegate, AV
                     print(messageLabel.text!)
                     
                     
-                    
-                    
                 }
             }
         }
@@ -170,14 +170,14 @@ class SecondViewController: UIViewController,UIImagePickerControllerDelegate, AV
         
         var json = NSDictionary()
         let urlToRequest: String = outpan + upc + apikey
-        
+
         if let nsdata: NSData! = NSData(contentsOfURL: NSURL(string: urlToRequest)!)! {
         do {
             json = try NSJSONSerialization.JSONObjectWithData(nsdata, options: NSJSONReadingOptions()) as! NSDictionary
             if let _ = json["error"] {
                 print("deu ruim")
             }else {
-            print(json["name"])
+                print(json["name"])
             }
         } catch {
             print(error)
