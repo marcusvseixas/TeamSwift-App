@@ -12,61 +12,28 @@ class MealTableViewController: UITableViewController {
 
     @IBOutlet var foodTableView: UITableView!
     
-    required init?(coder aDecoder: NSCoder) {
+    /*required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         // Initialize Tab Bar Item
         tabBarItem = UITabBarItem(title: "Feed", image: UIImage(named: "FoodFeed"), tag: 0)
-    }
+    }*/
     
     // Mark: Properties
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Load the sample data
+        
+        if let savedMeals = loadMeals() {
+            meals += savedMeals
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
         foodTableView.reloadData()
     }
-    
-    func addFood(newMeal : Meal){
-        meals +=  [newMeal]
-        print("meal added")
-    }
 
-    func loadSampleMeals(){
-        
-        let photo1 = UIImage(named: "SampleBurger")!
-        let meal1 = Meal(name: "Kenny Powers ate: Hamburger", photo: photo1, desc:"Hamburger was good")!
-        
-        let photo2 = UIImage(named: "SampleWich")!
-        let meal2 = Meal(name: "Ricky Bobby ate: Sandwich", photo: photo2, desc:"Hamburger was good")!
-        
-        let photo3 = UIImage(named: "SampleDog")!
-        let meal3 = Meal(name: "Brick Tamland ate: Hot Dog", photo: photo3, desc:"Hamburger was good")!
-        
-        let photo4 = UIImage(named: "SampleNoodle")!
-        let meal4 = Meal(name: "Cal Naughton, Jr. ate: Noodles, Soup, Roll", photo: photo4, desc:"Hamburger was good")!
-        
-        let photo5 = UIImage(named: "SamplePie")!
-        let meal5 = Meal(name: "Ricky Bobby ate: Pumpkin Pie", photo: photo5, desc:"Hamburger was good")!
-        
-        let photo6 = UIImage(named: "SampleNacho")!
-        let meal6 = Meal(name: "Brick Tamland ate: Nachos", photo: photo6, desc:"Hamburger was good")!
-        
-        let photo7 = UIImage(named: "SamplePizza")!
-        let meal7 = Meal(name: "Cal Naughton, Jr. ate: Pizza", photo: photo7, desc:"Hamburger was good")!
-        
-        
-        meals += [meal1,meal2,meal3,meal4,meal5,meal6,meal7]
-    }
-    
-    func loadMeals(){
-
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -107,6 +74,21 @@ class MealTableViewController: UITableViewController {
         return cell
     }
 
+    //MARK: NSCoding
+    
+    func saveMeals(){
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(meals, toFile: Meal.ArchiveURL.path!)
+        if !isSuccessfulSave {
+            print("Failed to save meals...")
+        }else{
+            print("meal saved")
+        }
+    }
+    
+    func loadMeals() -> [Meal]? {
+        return NSKeyedUnarchiver.unarchiveObjectWithFile(Meal.ArchiveURL.path!) as? [Meal]
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
