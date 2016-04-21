@@ -9,7 +9,6 @@ import AVFoundation
 var meals = [Meal]()
 var isPressed = false
 class SecondViewController: UIViewController,UIImagePickerControllerDelegate, AVCaptureMetadataOutputObjectsDelegate, UITextFieldDelegate, UINavigationControllerDelegate{
-
     
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var foodName: UITextField!
@@ -19,7 +18,6 @@ class SecondViewController: UIViewController,UIImagePickerControllerDelegate, AV
     var captureSession:AVCaptureSession?
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     var qrCodeFrameView:UIView?
-    
     
     @IBAction func dismissKeyboard(sender: AnyObject) {
         self.view.endEditing(true)
@@ -49,8 +47,7 @@ class SecondViewController: UIViewController,UIImagePickerControllerDelegate, AV
             foodName.text = ""
             foodDesc.text = ""
             foodPic.image = defaultImage
-            
-            
+            MealTableViewController().saveMeals()
         }
     }
     

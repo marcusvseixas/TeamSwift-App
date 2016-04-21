@@ -104,17 +104,12 @@ class ThirdViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
                 
                 if metadataObj.stringValue != nil {
                     //messageLabel.text = getJSON("https://api.outpan.com/v2/products/",upc: metadataObj.stringValue,apikey:"?apikey=c6c2561760980843c06d4f5a2b435202")
-                    
-                    
                     if data.characters.count != 0{
                         let alertController = UIAlertController(title: "Test", message: data ,preferredStyle: style)
                         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
                         self.presentViewController(alertController, animated: true, completion: nil)
                     }
-                    
                     //print(messageLabel.text!)
-                    
-                    
                 }
             }
         }
