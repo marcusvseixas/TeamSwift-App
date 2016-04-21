@@ -19,6 +19,7 @@
 		E345F1611C756C06000C3F6B /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E345F1601C756C06000C3F6B /* MealTableViewController.swift */; };
 		E345F1631C756E1B000C3F6B /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E345F1621C756E1B000C3F6B /* Meal.swift */; };
 		E345F1671C75B586000C3F6B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E345F1661C75B586000C3F6B /* TabBarViewController.swift */; };
+		E38D65BB1C8901F0007C3077 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38D65BA1C8901F0007C3077 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E345F1601C756C06000C3F6B /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 		E345F1621C756E1B000C3F6B /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		E345F1661C75B586000C3F6B /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		E38D65BA1C8901F0007C3077 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				7591D4D21C6D4ADC0052658E /* SecondViewController.swift */,
 				7591D4D41C6D4ADC0052658E /* Main.storyboard */,
 				E345F1601C756C06000C3F6B /* MealTableViewController.swift */,
+				E38D65BA1C8901F0007C3077 /* ThirdViewController.swift */,
 				E345F1661C75B586000C3F6B /* TabBarViewController.swift */,
 				E345F1621C756E1B000C3F6B /* Meal.swift */,
 				7591D4D71C6D4ADC0052658E /* Assets.xcassets */,
@@ -207,7 +210,7 @@
 				TargetAttributes = {
 					7591D4CA1C6D4ADC0052658E = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 5ZEQ45VQL2;
+						DevelopmentTeam = NLQUV82R7T;
 					};
 					7591D4E01C6D4ADC0052658E = {
 						CreatedOnToolsVersion = 7.2;
@@ -277,6 +280,7 @@
 				7591D4CF1C6D4ADC0052658E /* AppDelegate.swift in Sources */,
 				E345F1671C75B586000C3F6B /* TabBarViewController.swift in Sources */,
 				E345F1631C756E1B000C3F6B /* Meal.swift in Sources */,
+				E38D65BB1C8901F0007C3077 /* ThirdViewController.swift in Sources */,
 				7591D4D11C6D4ADC0052658E /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,7 +427,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "TeamSwift-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "tsa.TeamSwift-App.Marcus";
+				PRODUCT_BUNDLE_IDENTIFIER = "tsa.TeamSwift-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -437,7 +441,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "TeamSwift-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "tsa.TeamSwift-App.Marcus";
+				PRODUCT_BUNDLE_IDENTIFIER = "tsa.TeamSwift-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
