@@ -65,8 +65,9 @@ class MealTableViewController: UITableViewController {
             label.text = meal.name
             
         }
-        if let desc = cell.foodDescription{
-            desc.text = meal.desc
+        
+        if let description = cell.foodDescription{
+            description.text = meal.desc
         }
         
         cell.photoImageView.image = meal.photo
