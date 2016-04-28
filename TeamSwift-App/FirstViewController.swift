@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, UITableViewDataSource{
+class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet var MealTableView: UITableView!
     
@@ -38,7 +38,10 @@ class FirstViewController: UIViewController, UITableViewDataSource{
         
      }
     
-
+  override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    if (editingStyle == UITableViewCellEditingStyle.Delete) {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,3 +57,4 @@ class FirstViewController: UIViewController, UITableViewDataSource{
 
 }
 
+}

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7591D4CF1C6D4ADC0052658E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591D4CE1C6D4ADC0052658E /* AppDelegate.swift */; };
-		7591D4D11C6D4ADC0052658E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591D4D01C6D4ADC0052658E /* FirstViewController.swift */; };
 		7591D4D31C6D4ADC0052658E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591D4D21C6D4ADC0052658E /* SecondViewController.swift */; };
 		7591D4D61C6D4ADC0052658E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7591D4D41C6D4ADC0052658E /* Main.storyboard */; };
 		7591D4D81C6D4ADC0052658E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7591D4D71C6D4ADC0052658E /* Assets.xcassets */; };
@@ -210,7 +209,7 @@
 				TargetAttributes = {
 					7591D4CA1C6D4ADC0052658E = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = NLQUV82R7T;
+						DevelopmentTeam = 4GX4T45J6R;
 					};
 					7591D4E01C6D4ADC0052658E = {
 						CreatedOnToolsVersion = 7.2;
@@ -281,7 +280,6 @@
 				E345F1671C75B586000C3F6B /* TabBarViewController.swift in Sources */,
 				E345F1631C756E1B000C3F6B /* Meal.swift in Sources */,
 				E38D65BB1C8901F0007C3077 /* ThirdViewController.swift in Sources */,
-				7591D4D11C6D4ADC0052658E /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +425,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "TeamSwift-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "tsa.TeamSwift-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "TeamSwift-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -441,7 +439,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "TeamSwift-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "tsa.TeamSwift-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "TeamSwift-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

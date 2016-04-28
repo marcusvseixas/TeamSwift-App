@@ -6,30 +6,10 @@
 import UIKit
 import AVFoundation
 
-var myItemlist = [String]()
-class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
-    @IBOutlet var myItemText: UITextField!
-
-    @IBAction func addItem(sender: AnyObject) {
-        
-        //Validate the text field
-        // put it on a stack
-        //clear the text field
-        
-        if myItemText.text?.characters.count > 0
-        {
-           myItemlist.append(myItemText.text!)
-           myItemText.text = ""
-           self.view.endEditing(true)// ?
-           print(myItemlist)
-            
-            
-        }
-        
-        
+var meals = [Meal]()
+var isPressed = false
+class SecondViewController: UIViewController,UIImagePickerControllerDelegate, AVCaptureMetadataOutputObjectsDelegate, UITextFieldDelegate, UINavigationControllerDelegate{
     
-
-    }
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var foodName: UITextField!
     @IBOutlet weak var foodDesc: UITextField!
@@ -84,6 +64,8 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         // Dismiss the picker if the user canceled.
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    //UITableDelete
     
     override func viewDidAppear(animated: Bool) {
         self.reloadInputViews()
